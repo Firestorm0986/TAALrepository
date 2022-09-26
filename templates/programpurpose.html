@@ -167,6 +167,11 @@
     navbar:hover{
         background-color: #111;
     }
+    .table_container{
+        display: block;
+        color: white;
+        border-color: #96D4D4;
+        }
 </style>
 
 {% block body %}
@@ -186,6 +191,59 @@
             use the website to keep notes but also take instant quizzes on them.</span>
         <span class="line top"></span>
         <span class="line left"></span>
+    </div>
+    <div class = "table_container">
+        <table>
+            <style>
+                table,th,td {
+                    padding: 10px;
+                    border: 1px solid white;
+                    border-collapse: collapse;
+                }
+            </style>
+            <tr>
+                <td>CollegeBoard Requirements</td>
+                <td>How our Program Satisfies it</td>
+            </tr>
+            <tr>
+              <td>Instructions for input from one of the following:
+                <br>- the user (including user actions that trigger events)
+                <br>- a device
+                <br>- an online data stream
+                <br>- a file</td>
+              <td>Our program will be able to take in user input for question and answers.</td>
+            </tr>
+            <tr>
+              <td>Use of at least one list (or other collection type) to represent a collection of
+                data that is stored and used to manage program complexity and help fulfill
+                the program’s purpose</td>
+              <td>Our program can use dictionaries in order to store question and answer pairs. 
+                This showcases a level of complexity in the program.</td>
+            </tr>
+            <tr>
+                <td>At least one procedure that contributes to the program’s intended purpose,
+                    where you have defined:
+                    <br>- the procedure’s name
+                    <br>- the return type (if necessary)
+                    <br>- one or more parameters </td>
+                <td>Our program will have to store and return data, based on user input. We will have multiple instances of storing and calling items.</td>
+              </tr>
+              <tr>
+                <td>An algorithm that includes sequencing, selection, and iteration that is in the
+                    body of the selected procedure</td>
+                <td>We will have to sequence and sort through dictionaries for the question and answer pairs.</td>
+              </tr>
+              <tr>
+                <td>Calls to your student-developed procedure</td>
+                <td>The program will have a student-developed procedure to quiz the user on questions which they have stored for a class.</td>
+              </tr>
+              <tr>
+                <td>Instructions for output (tactile, audible, visual, or textual) based on input and
+                    program functionality</td>
+                <td>The program will have a visual and potential textual or audible output. After the user reviews a flashcard, there will need to be an output for them to see the correct answer.</td>
+              </tr>
+          </table>
+        
     </div>
     
 {% endblock %}
